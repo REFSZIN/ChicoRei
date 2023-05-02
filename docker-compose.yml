@@ -1,0 +1,26 @@
+services:
+  vue:
+    container_name: vue
+    build: ./
+    ports:
+      - 8080:8080
+    volumes:
+      - vue-volume:/var/www/html
+    stdin_open: true
+    privileged: true
+    
+  nginx:
+    container_name: nginx
+    build: ./nginx
+    ports:
+      - 80:80
+    volumes:
+      - vue-volume:/var/www/html
+    depends_on:
+      - postgres
+      - node
+      - vue
+    privileged: true
+
+volumes:
+  vue-volume:
