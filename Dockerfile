@@ -1,21 +1,26 @@
-FROM node
+# busca a versão latest do node
+FROM node:16
 
+# pasta para onde vai o build
 WORKDIR /app
 
-COPY package.json /app
+# copia os arquivos para dentro da pasta WORKDIR
+COPY . .
 
-COPY package-lock.json /app
+# instala as dependências do projeto
+RUN npm install
 
-RUN npm install -g @vue/cli
+# cria a versão otimizada de produção
+RUN npm run build
 
-RUN npm audit fix --force
+# cria a pasta para servir o conteúdo
+RUN mkdir -p /var/www/html
 
-RUN npm i --save
+# move o conteúdo do build para a pasta
+RUN mv dist/* /var/www/html/
 
-RUN mkdir -p node_modules/.cache && chmod -R 777 node_modules/.cache
-
-COPY . /app
-
+# expõe a porta do container
 EXPOSE 8080
 
+# comando para executar o servidor do Vue.js
 CMD ["npm", "run", "serve"]
