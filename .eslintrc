@@ -1,7 +1,0 @@
-{
-  "parser": "babel-eslint",
-  "plugins": ["import"],
-  "rules": {
-    "babel/no-babel-node-env": "off"
-  }
-}

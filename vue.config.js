@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+
 module.exports = defineConfig({
   css: {
     loaderOptions: {
@@ -6,5 +7,11 @@ module.exports = defineConfig({
         javascriptEnabled: true
       }
     }
+  },
+
+  pluginOptions: {
+    vuetify: {
+			// https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
+		}
   }
 })
