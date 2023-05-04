@@ -29,7 +29,6 @@ module.exports = {
                   modifyVars: {
                     'primary': '#3f51b5',
                   },
-                  javascriptEnabled: true,
                 }
               }
             }
