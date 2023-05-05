@@ -12,74 +12,83 @@ state: {
     {
       id: 1,
       category: 'Camisetas',
-      images: [image1],
+      images: [image1, image2],
       title: 'CAMISETA ALCEU DISPOR',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 100.00
+      price: 100.00,
+      amount: 1
     },
     {
       id: 2,
       category: 'Camisas',
-      images: [image2],
+      images: [image2, image1],
       title: 'CAMISETA MANO LISO',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 4,
       category: 'Estampadas',
-      images: [image2],
+      images: [image2, image1],
       title: 'CAMISETA MANO LISO',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 5,
       category: 'Estampadas',
-      images: [image1],
+      images: [image1, image2],
       title: 'CAMISETA ALCEU DISPOR',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 6,
       category: 'Camisas',
-      images: [image2],
+      images: [image2, image1],
       title: 'CAMISETA MANO LISO',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 9,
       category: 'Camisas',
-      images: [image2],
+      images: [image2, image1],
       title: 'CAMISETA MANO LISO',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 7,
       category: 'Camisas',
-      images: [image1],
+      images: [image1, image2],
       title: 'CAMISETA ALCEU DISPOR',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 300.00
+      price: 300.00,
+      amount: 1
     },
     {
       id: 8,
       category: 'Camisas',
-      images: [image2],
+      images: [image2, image1],
       title: 'CAMISETA MANO LISO',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
     {
       id: 3,
       category: 'Infantil',
-      images: [image1],
+      images: [image1, image2],
       title: 'CAMISETA ALCEU DISPOR',
       description: 'Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.Interagi no mé, cursus quis, vehicula ac nisi.Manduma pindureta quium dia nois paga.Diuretics paradis num copo é motivis de denguis.',
-      price: 200.00
+      price: 200.00,
+      amount: 1
     },
   ],
   carrinho: [],

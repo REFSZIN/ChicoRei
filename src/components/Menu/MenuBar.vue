@@ -1,22 +1,24 @@
 <template>
-    <v-app-bar  class="d-flex justify-space-between mb-6">
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-card-actions>
-        <router-link to="/">
-          <img class="logo" 
-          src="https://chico-rei.imgix.net/images/site/2021/brand/chico-rei-text.svg" 
-          aspect-ratio="1" 
-          alt="logo"/>
-        </router-link>  
+    <v-app-bar class="d-flex justify-space-between d-flex justify-content-center justify-center">
+      <v-app-bar-nav-icon class="ml-sm-12" @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-spacer />
+      <v-card-actions class="d-flex align-center">
+        <router-link to="/" class="d-flex justify-center">
+          <img
+            class="logo"
+            src="https://chico-rei.imgix.net/images/site/2021/brand/chico-rei-text.svg"
+            aspect-ratio="1"
+            alt="logo"
+          />
+        </router-link>
       </v-card-actions>
-      <v-spacer></v-spacer>
-      <router-link to="/checkout">
+      <v-spacer />
+      <router-link class="mr-sm-12" to="/checkout">
         <v-app-bar-nav-icon>
           <v-badge color="black" 
           :content="carrinho.length" 
           offset-x="-20" 
-          offset-y="-20">
-          </v-badge>
+          offset-y="-20"></v-badge>
           <v-icon class="carticon">mdi-cart</v-icon>
         </v-app-bar-nav-icon>
       </router-link>
@@ -29,8 +31,12 @@
       class="menu d-flex text-center"
       @click="drawer = !drawer"
     >
-      <h2 class="d-flex titlemenu">Menu
-        <v-spacer></v-spacer>
+      <h2 class="d-flex titlemenu">
+        <img
+        class="d-flex Logomenu"
+        src="https://chico-rei.imgix.net/images/site/2021/favicon/android-icon-192x192.png?auto=compress,format&q=65" 
+        alt="Logomenu"/>Menu
+        <v-spacer/>
         <v-icon class="d-flex flex-row mb-6 ml-12 exit" @click="!drawer" >mdi-close</v-icon>
       </h2>
       <v-list>
@@ -39,6 +45,7 @@
           <v-list-item-title>{{ item.titulo }}</v-list-item-title>
         </v-list-item>
       </v-list>
+      
       <hr class="hr-4"/>
       <v-list class="">
         <v-list-item-title>Faça a sua primeira compra na </v-list-item-title>
