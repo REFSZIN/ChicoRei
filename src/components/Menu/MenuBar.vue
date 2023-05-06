@@ -25,12 +25,12 @@
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
-      app
       :width="280"
-      relative
+      clipped
+      app
       class="menu d-flex text-center"
       @click="drawer = !drawer"
-    >
+      >
       <h2 class="d-flex titlemenu">
         <img
         class="d-flex Logomenu"
@@ -45,7 +45,6 @@
           <v-list-item-title>{{ item.titulo }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      
       <hr class="hr-4"/>
       <v-list class="">
         <v-list-item-title>Faça a sua primeira compra na </v-list-item-title>

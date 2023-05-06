@@ -6,7 +6,7 @@
    CHICO REI - Frontend
 </h1>
 Seja bem-vindo ao portal da Chico Rei 
-|Camisetas Personalizadas e Com Impacto Social👕
+|Camisetas Personalizadas e Com Impacto Social 👕
 <hr>
   <h3>Built With</h3>
   <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" height="30px"/>
@@ -19,7 +19,7 @@ Seja bem-vindo ao portal da Chico Rei
 
 # Description
 
-Stack Front-End application Vue.js 3 + Less + Docker + Nginx </br>
+Stack Front-End application Vue.js 3 + Less + Eslint + Prettier +  Vuetify + Vue Router + Docker + Nginx + GitActions </br>
 
 </br>
 
