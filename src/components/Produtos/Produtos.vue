@@ -8,7 +8,8 @@
       max-width="100%" 
       max-height="300px" 
       height="auto" 
-      width="auto">
+      width="auto"
+      v-show="showCarousel">
         <v-carousel-item v-for="(item, i) in banners" :key="i" cover>
           <v-img :src="item"
             max-height="100vh"
@@ -96,6 +97,7 @@
     data() {
       return {
         filtroCategoria: 'Todos Produtos',
+        showCarousel: true,
         banners: [banner1, banner2],
       };
     },
