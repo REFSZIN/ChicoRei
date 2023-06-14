@@ -1,5 +1,5 @@
 {
-  "name": "chico-rei",
+  "name": "speedio-front",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,8 @@
     "cep-promise": "^4.4.0",
     "core-js": "^3.8.3",
     "jwt-decode": "^3.1.2",
+    "lord-icon-element": "^4.1.1",
+    "lottie-web": "^5.12.2",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
     "vue-axios": "^3.5.2",
@@ -65,5 +67,9 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "description": "<!-- markdownlint-disable --> ![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=YAN-REFSZIN%20&fontAlignY=40&color=gradient) <div align=\"center\">      <img height=\"300px\" src=\"https://speedio.com.br/4.1/assets/img/logo-speedio.svg\"> <h1 align=\"center\">    Speedio - Frontend </h1> <hr>   <h3>Built With</h3>   <img src=\"https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D\" height=\"30px\"/>   <img src=\"https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E\" height=\"30px\"/>   <img src=\"https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white\" height=\"30px\"/>   <img src=\"https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white\" height=\"30px\"/>   <img src=\"https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white\" height=\"30px\"/> </div> <br/>",
+  "main": ".eslintrc.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -1,23 +1,20 @@
 <template class="Conteiner">
   <MenuBar/>
-  <ShortComponent/>
-  <MyShort/>
+  <SignIn/>
   <Footer/>
 </template>
 
 <script>
   import { defineComponent } from 'vue';
-  import './HomePage.less'
+  import './SignInPage.less'
   import MenuBar from '../../components/Menu/MenuBar.vue';
-  import MyShort from '../../components/MyShort/MyShort.vue';
-  import ShortComponent from '../../components/Shortly/ShortComponent.vue';
+  import SignIn from '../../components/In/SignIn.vue';
   import Footer from '../../components/Footer/FooterComponent.vue';
   export default defineComponent({
-    name: 'HomePage',
+    name: 'SignInPage',
     components: {
       MenuBar,
-      ShortComponent,
-      MyShort,
+      SignIn,
       Footer
     },
   });

@@ -1,6 +1,20 @@
-import axios from 'axios'
+import axios from 'axios';
 
-axios.defaults.baseURL = 'http://127.0.0.1:5000'
-axios.defaults.headers.common['Authorization'] = 'Barrer '
+const axiosInstance = axios.create({
+  baseURL: 'http://127.0.0.1:5000',
+});
 
-export default axios
+axiosInstance.interceptors.request.use(
+  (config) => {
+    const user = localStorage.getItem('user');
+    if (user) {
+      config.headers.Authorization = `Bearer ${user.token}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+export default axiosInstance;

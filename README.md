@@ -1,12 +1,10 @@
 <!-- markdownlint-disable -->
 ![waving](https://capsule-render.vercel.app/api?type=waving&height=200&text=YAN-REFSZIN%20&fontAlignY=40&color=gradient)
 <div align="center">
-     <img height="300px" src="https://s2.glbimg.com/lqbOVpke2w-tWmoo_k43garT53g=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/O/0/mrixYaSfaNSmnfZwvsUg/cr-logo-2021-5.png">
+     <img height="300px" src="https://speedio.com.br/4.1/assets/img/logo-speedio.svg">
 <h1 align="center">
-   CHICO REI - Frontend
+   Speedio - Frontend
 </h1>
-Seja bem-vindo ao portal da Chico Rei 
-|Camisetas Personalizadas e Com Impacto Social 👕
 <hr>
   <h3>Built With</h3>
   <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D" height="30px"/>
@@ -19,7 +17,7 @@ Seja bem-vindo ao portal da Chico Rei
 
 # Description
 
-Stack Front-End application Vue.js 3 + Less + Eslint + Prettier +  Vuetify + Vue Router + Docker + Nginx + GitActions </br>
+Front-End application Vue.js 3 + Less + Eslint + Prettier +  Vuetify + Vue Router + Docker + Nginx + GitActions </br>
 
 </br>
 

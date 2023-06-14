@@ -1,18 +1,21 @@
 <template class="Conteiner">
   <MenuBar/>
-  <Carrinho/>
+  <SignUp/>
+  <Footer/>
 </template>
 
 <script>
   import { defineComponent } from 'vue';
-  import './CheckoutPage.less'
-  import Carrinho from '../../components/Carrinho/Carrinho.vue';
+  import './SignUpPage.less'
   import MenuBar from '../../components/Menu/MenuBar.vue';
+  import SignUp from '../../components/Up/SignUp.vue';
+  import Footer from '../../components/Footer/FooterComponent.vue';
   export default defineComponent({
-    name: 'CheckoutPage',
+    name: 'SignUpPage',
     components: {
-      Carrinho,
       MenuBar,
+      SignUp,
+      Footer
     },
   });
 </script>

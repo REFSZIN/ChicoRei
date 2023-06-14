@@ -10,12 +10,40 @@ const routes = [
     props: true,
   },
   {
-    name: 'CheckoutPage',
-    path: '/checkout',
+    name: 'RankPage',
+    path: '/rank',
     components: {
-      default: () => import('../views/Checkout/CheckoutPage.vue')
+      default: () => import('../views/Top/TopPage.vue')
     },
     props: true,
+  },
+  {
+    name: 'Signup',
+    path: '/signup',
+    components: {
+      default: () => import('../views/SignUp/SignUpPage.vue')
+    },
+    props: true,
+  },
+  {
+    name: 'Signin',
+    path: '/signin',
+    components: {
+      default: () => import('../views/SignIn/SignInPage.vue')
+    },
+    props: true,
+  },
+  {
+    name: 'Redirection',
+    path: '/cut',
+    components: {
+      default: () => import('../views/Redirection/RedirectionPage.vue')
+    },
+    props: true,
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/'
   }
 ]
 

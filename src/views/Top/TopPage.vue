@@ -1,23 +1,20 @@
 <template class="Conteiner">
   <MenuBar/>
-  <ShortComponent/>
-  <MyShort/>
+  <Rank/>
   <Footer/>
 </template>
 
 <script>
   import { defineComponent } from 'vue';
-  import './HomePage.less'
+  import './TopPage.less'
   import MenuBar from '../../components/Menu/MenuBar.vue';
-  import MyShort from '../../components/MyShort/MyShort.vue';
-  import ShortComponent from '../../components/Shortly/ShortComponent.vue';
+  import Rank from '../../components/Rank/RankComponent.vue';
   import Footer from '../../components/Footer/FooterComponent.vue';
   export default defineComponent({
-    name: 'HomePage',
+    name: 'TopPage',
     components: {
       MenuBar,
-      ShortComponent,
-      MyShort,
+      Rank,
       Footer
     },
   });

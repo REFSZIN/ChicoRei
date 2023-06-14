@@ -3,10 +3,10 @@
       <v-app-bar-nav-icon class="ml-sm-12" @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer />
       <v-card-actions class="d-flex align-center">
-        <router-link to="/" class="d-flex justify-center">
+        <router-link to="/" class="link">   
           <img
             class="logo"
-            src="https://chico-rei.imgix.net/images/site/2021/brand/chico-rei-text.svg"
+            src="https://speedio.com.br/4.1/assets/img/logo-speedio.svg"
             aspect-ratio="1"
             alt="logo"
           />
@@ -14,13 +14,6 @@
       </v-card-actions>
       <v-spacer />
       <router-link class="mr-sm-12" to="/checkout">
-        <v-app-bar-nav-icon>
-          <v-badge color="black" 
-          :content="carrinho.length" 
-          offset-x="-20" 
-          offset-y="-20"></v-badge>
-          <v-icon class="carticon">mdi-cart</v-icon>
-        </v-app-bar-nav-icon>
       </router-link>
     </v-app-bar>
     <v-navigation-drawer
@@ -34,7 +27,7 @@
       <h2 class="d-flex titlemenu">
         <img
         class="d-flex Logomenu"
-        src="https://chico-rei.imgix.net/images/site/2021/favicon/android-icon-192x192.png?auto=compress,format&q=65" 
+        src="https://speedio.com.br/4.1/assets/img/speedio-favicon.svg" 
         alt="Logomenu"/>Menu
         <v-spacer/>
         <v-icon class="d-flex flex-row mb-6 ml-12 exit" @click="!drawer" >mdi-close</v-icon>
@@ -45,27 +38,28 @@
           <v-list-item-title>{{ item.titulo }}</v-list-item-title>
         </v-list-item>
       </v-list>
-      <hr class="hr-4"/>
       <v-list class="">
-        <v-list-item-title>Faça a sua primeira compra na </v-list-item-title>
-        <v-list-item-title>Chico Rei com toda a tranquilidade :)</v-list-item-title>
+        <v-list-item-title>Faça a sua conta na Speedio </v-list-item-title>
+        <v-list-item-title>e tenha toda a tranquilidade :)</v-list-item-title>
       </v-list>
     </v-navigation-drawer>
 </template>
 
 <script>
   import './MenuBar.less';
-  import { mapGetters } from 'vuex';
 
   export default {
     computed: {
-    ...mapGetters(['carrinho']),
     },
     data: () => ({
       drawer: false,
       menuItens: [
-        { titulo: 'Produtos', rota: '/', icone: 'mdi-tag' },
-        { titulo: 'Carrinho', rota: '/checkout', icone: 'mdi-shopping' },
+        { titulo: 'Encurtador', rota: '/', icone: ' mdi-content-cut' },
+        { titulo: 'Ranking', rota: '/rank', icone: 'mdi-poll' },
+        { titulo: 'Login', rota: '/signin', icone: 'mdi-login' },
+        { titulo: 'Registar', rota: '/signup', icone: 'mdi-account-multiple-plus' },
+        { titulo: 'Sair', rota: '/', icone: 'mdi-logout' },
+        { titulo: 'SpeedioCut', rota: '/cut', icone: ' mdi-open-in-new' },
       ],
     }),
   };
@@ -74,7 +68,7 @@
 <style scoped>
 @keyframes slide-in {
   from {
-    transform: translateX(-300px);
+    transform: translateX(-400px);
   }
   to {
     transform: translateX(0);
@@ -89,5 +83,8 @@
 .menu-enter,
 .menu-leave-to {
   transform: translateX(-300px);
+}
+.link{
+  width: 12vw !important;
 }
 </style>
